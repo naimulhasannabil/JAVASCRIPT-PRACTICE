@@ -37,3 +37,37 @@ var num10 = 30;
 
 var total5 = num9 % num10;
 console.log(total5)
+
+//For Predefine Function
+
+//FOr absulate
+var n1 = -20;
+
+var sum = Math.abs(n1) // In here we convert negative number into positive.
+console.log(sum)
+
+//for round
+var  totalMembers = 10;
+var voter = 5.4;
+
+var sum = Math.round(voter) // In here round method accept to the nearest integer. 
+console.log(sum)
+
+//for ceiling
+
+var Num = 0.35656;
+
+var sum = Math.ceil(Num) // In here ceiling method did not accept float number & it always accept the upper integer.
+console.log(sum)
+
+//for floor
+
+var num = 0.999;
+
+var sum = Math.floor(num) //In here floor mathod rounds a number down to the nearest integer
+console.log(sum)
+
+//for Random
+
+var ran = Math.random(); // random method returns a random number between 0 and 1. you can also add the number that you are randomly wanted.
+console.log(ran)
