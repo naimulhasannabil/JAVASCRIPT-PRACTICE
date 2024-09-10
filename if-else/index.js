@@ -106,3 +106,31 @@ if (currentHour < 12) {
 console.log(greeting); // this code Output (depending on the time of day you execute the code).
 
 // Write a program that calculates the Body Mass Index (BMI) and categorizes it. The formula for BMI is: weight / (height * height).
+var weight = 70; // in kilograms
+var height = 1.75 // in meters
+var bmi = weight / (height * height);
+var category;
+
+if (bmi < 18.5) {
+    category = "UnderWeight";
+} else if (bmi < 24.9) {
+    category = "Normal Weight";
+} else if (bmi < 29.9) {
+    category = "Overweight";
+} else {
+    category = "Obese";
+}
+console.log("BMI: " + bmi.toFixed(2)); // .toFixed(2) limit the number of decimals to 2
+console.log("Category: " + category);
+
+// Write a simple number guessing game. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
+
+var secretNumber = 7;
+var guess = 5; // The player's guess, change this to see that different code lines are executed based on the conditions
+if (guess === secretNumber) {
+    console.log("Congratulations! You guessed the correct number.");
+} else if (guess < secretNumber) {
+    console.log("Try a higher number.");
+} else {
+    console.log("Try a lower number.");
+}
