@@ -47,3 +47,39 @@ switch (true) {
         default:
             console.log("F");
 }
+
+// Switch Case using for grade pattern and the data taken from user preferences
+
+var grade = "C+";
+
+switch (grade) {
+    case "A+":
+        console.log("Excellent");
+        break;
+    case "A":
+        console.log("Great");
+        break;
+    case "A-":
+        console.log("Good");
+        break;
+    case "B+":
+        console.log("Satisfactory");
+        break;
+    case "B":
+        console.log("Fair");
+        break;
+    case "B-":
+        console.log("Unsatisfactory");
+        break;
+    case "C+":
+        console.log("Below Average");
+        break;
+    case "C":
+        console.log("Needs Improvement");
+        break;
+    case "C-":
+        console.log("Not Enough");
+        break;
+    default:
+        console.log("Invalid Grade");
+}
