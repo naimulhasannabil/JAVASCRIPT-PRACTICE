@@ -75,3 +75,11 @@ var array2 = ['j', 'k', 'l'];
 var concatenatedArray = fdName.concat(array2); //concatenate two arrays
 
 console.log(concatenatedArray);
+
+//Searching an element in an array
+
+console.log("Searching an element in an array");
+
+console.log(fdName.indexOf('c')); //search for 'c' in the array and return its index
+
+console.log(fdName.lastIndexOf('c')); //search for 'c' in the array from the end and return its index
