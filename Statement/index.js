@@ -14,3 +14,30 @@ for(var i = 0; i < 10; i++) {
     }
     console.log(i);
 }
+
+// Labelled statement
+
+outerLoop: for(var i = 0; i < 5; i++) {
+    for(var j = 0; j < 3; j++) {
+        if(i == 2 && j == 1){
+            break outerLoop; // Exit the outer loop when i equals 2 and j equals 1
+        }
+        console.log("i: " + i + ", j: " + j);
+    }
+}
+
+// Nested loops
+
+for(var i = 0; i < 5; i++) {
+    for(var j = 0; j < 3; j++) {
+        console.log("i: " + i + ", j: " + j);
+    }
+}
+
+// Loop with a condition
+
+var i = 0;
+while(i < 10) {
+    console.log(i);
+    i++;
+}
