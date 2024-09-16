@@ -62,3 +62,20 @@ console.log(round)
 // Answer: 
 var num5 = Math.random();
 console.log(num5) 
+
+// 13. How to Convert String to Number?
+ // Answer:
+var num6 = "85";
+num6 = parseInt(num6); //In here we convert String into Number for Int Number
+var total2 = num3 + num6;
+
+// 14. How to Convert Number to String?
+ // Answer:
+var num7 = 100;
+num7 = num7.toString(); //In here we convert Number into String
+console.log(num7)
+
+// 15. How to Check if a Number is Integer?
+ // Answer:
+var num8 = 10.5;
+console.log(Number.isInteger(num8)) //In here we check if a Number is Integer or Not
