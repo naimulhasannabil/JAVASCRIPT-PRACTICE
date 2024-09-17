@@ -48,3 +48,43 @@ switch (true) {
             console.log("F");
 }
 
+// Switch Case with multiple conditions
+
+var grade = "A";
+switch (grade) {
+    case "A":
+    case "A+":
+        console.log("Excellent");
+        break;
+    case "B":
+    case "B+":
+        console.log("Good");
+        break;
+    case "C":
+    case "C+":
+        console.log("Average");
+        break;
+    case "D":
+    case "D+":
+        console.log("Below Average");
+        break;
+    default:
+        console.log("Invalid Grade");
+}
+
+// Switch Case with nested conditions
+
+var age = 25;
+switch (true) {
+    case age >= 60:
+        console.log("Senior Citizen");
+        break;
+    case age >= 30:
+        console.log("Adult");
+        break;
+    case age >= 18:
+        console.log("Minor");
+        break;
+    default:
+        console.log("Child");
+}
