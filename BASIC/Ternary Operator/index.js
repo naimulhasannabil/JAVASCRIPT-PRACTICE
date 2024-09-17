@@ -48,3 +48,15 @@ if (num > 5) {
 }
 
 console.log(result); // Output: Number is greater than 5
+
+// Ternary Operators with Function
+
+function checkEven(num) {
+    return (num % 2 === 0) ? "Even" : "Odd";
+}
+
+var num = 10;
+
+var result = (num % 2 === 0) ? checkEven(num) : "Odd";
+
+console.log(result); // Output: Even
