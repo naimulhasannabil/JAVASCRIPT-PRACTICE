@@ -41,3 +41,31 @@ while(i < 10) {
     console.log(i);
     i++;
 }
+
+// Loop with a condition and increment
+
+var i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 10);
+
+// Loop Arrays
+
+var names = ["John", "Alice", "Bob"];
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+// Loop Objects
+
+var person = {
+    name: "Nabil",
+    age: 23,
+    city: "Dhaka"
+}
+
+for (var key in person) {
+    console.log(key + ": " + person[key]);
+}
+
