@@ -134,3 +134,43 @@ var person1 = new Person("Naimul Hasan Nabil", 23, "Dhaka");
 // console.log(person1.city); // Output: New York
 
 person1.ShowMe(); // Output: Name: Naimul Hasan Nabil, Age: 23, City: Dhaka
+
+// class and constructor
+
+class Person {
+    constructor(name, age, city) {
+        this.name = name;
+        this.age = age;
+        this.city = city;
+    }
+
+    ShowMe() {
+        console.log("Name: " + this.name + ", Age: " + this.age + ", City: " + this.city);
+    }
+}
+
+var person2 = new Person("John Doe", 30, "New York");
+
+// console.log(person2.name); // Output: John Doe
+
+person2.ShowMe(); // Output: Name: John Doe, Age: 30, City: New York
+
+// inheritance
+
+class Employee extends Person {
+    constructor(name, age, city, position) {
+        super(name, age, city);
+        this.position = position;
+    }
+
+    ShowMe() {
+        super.ShowMe();
+        console.log("Position: " + this.position);
+    }
+}
+
+var employee1 = new Employee("Jane Smith", 28, "Los Angeles", "Manager");
+
+// console.log(employee1.name); // Output: Jane Smith
+
+employee1.ShowMe(); // Output: Name: Jane Smith, Age: 28, City: Los Angeles, Position: Manager
