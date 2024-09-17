@@ -134,3 +134,17 @@ if (guess === secretNumber) {
 } else {
     console.log("Try a lower number.");
 }
+
+// Write a program that converts temperature from Celsius to Fahrenheit. The formula for conversion is: (celsius * 9/5) + 32.
+
+var celsius = 25; // in Celsius
+var fahrenheit = (celsius * 9/5) + 32;
+console.log("Temperature in Fahrenheit: " + fahrenheit.toFixed(2)); //.toFixed(2) limit the number of decimals to 2
+
+// Write a program that calculates the area of a rectangle. The formula for the area of a rectangle is: length * width.
+
+var length = 5; // in meters
+var width = 3; // in meters
+var area = length * width;
+console.log("Area of the rectangle: " + area + " square meters");
+
