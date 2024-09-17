@@ -121,3 +121,68 @@ myFunction8("5")
         // }
         // Handle the promise rejection here
     }
+
+    myFunction9("5");
+
+    // Function with Promise.all and async/await
+    async function myFunction10 () {
+        const num1 = await myFunction8(5);
+        const num2 = await myFunction8(10);
+        const num3 = await myFunction8(15);
+        console.log(num1, num2, num3);
+        // Handle the promise resolution here
+        // or use try/catch
+        // try {
+        //     const [num1, num2, num3] = await Promise.all([
+        //         myFunction8(5),
+        //         myFunction8(10),
+        //         myFunction8(15)
+        //     ]);
+        //     console.log(num1, num2, num3);
+        // } catch (error) {
+        //     console.error(error.message);
+        // }
+        // Handle the promise rejection here
+    }
+    
+    myFunction10();
+    
+    // Function with Promise.race and async/await
+    async function myFunction11 () {
+        const num1 = await Promise.race([
+            myFunction8(5),
+            new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), 1000))
+        ]);
+        console.log(num1);
+        // Handle the promise resolution here
+        // or use try/catch
+        // try {
+        //     const num1 = await Promise.race([
+        //         myFunction8(5),
+        //         new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), 1000))
+        //     ]);
+        //     console.log(num1);
+        // } catch (error) {
+        //     console.error(error.message);
+        // }
+        // Handle the promise rejection here
+    }
+    
+    myFunction11();
+    
+    // Function with Promise.allSettled and async/await
+    async function myFunction12 () {
+        const results = await
+        Promise.allSettled([
+            myFunction8(5),
+            myFunction8(10),
+            myFunction8(15)
+        ]);
+        results.forEach(result => {
+            if (result.status === "fulfilled") {
+                console.log(result.value);
+            } else {
+                console.error(result.reason.message);
+            }
+        });
+    }        
