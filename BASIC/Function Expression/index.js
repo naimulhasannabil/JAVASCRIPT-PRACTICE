@@ -53,4 +53,4 @@ var person = {
 
 var {name} = person;
 
-console.log(name); // Output: John Doe
+console.log(name); // Output: Naimul Hasan Nabil
