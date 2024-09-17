@@ -68,3 +68,34 @@
 
  console.log(add(1, 2)); // Output: 3
  console.log(add(1, 2, 3)); // Output: 6
+
+ // Function Expression with Arrow Function
+ var myFunction2 = (p1 = 5, p2 = 6) => {
+    return p1 * p2;
+ }
+
+ console.log(myFunction2()); // Output: 30
+
+ // Function Expression with Default Parameter
+
+ var myFunction3 = function (p1 = 5, p2 = 6) {
+    return p1 * p2;
+ }
+
+ console.log(myFunction3()); // Output: 30
+
+ // Function Expression with Arrow Function
+
+ var myFunction4 = (p1, p2) => p1 * p2;
+
+ console.log(myFunction4(5, 6)); // Output: 30
+
+ // Function with Rest Parameter
+
+ function myFunction5(...param) {
+    return param.reduce((accumulator, currentValue) => accumulator + currentValue);
+ }
+
+ console.log(myFunction5(1, 2, 3, 4, 5));
+
+ 
