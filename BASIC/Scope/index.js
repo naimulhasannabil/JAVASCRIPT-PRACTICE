@@ -42,3 +42,26 @@ function myFunction3() {
     let localVar2 = "I am block scoped";
     console.log(localVar2); // Output: I am block scoped
 }
+
+myFunction3();
+
+// Hoisting
+
+console.log(myVar); // Output: undefined
+var myVar = "I am hoisted";
+
+myFunction();
+
+function myFunction() {
+    console.log("Hello World!");
+}
+
+// Function Hoisting with Let
+
+console.log(myLet); // ReferenceError
+let myLet = "I am hoisted";
+
+// Function Hoisting with Const
+
+console.log(myConst); // ReferenceError
+const myConst = "I am hoisted";
