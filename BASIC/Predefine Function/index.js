@@ -27,3 +27,26 @@ num6 = "" + num6;
 var total3 = num6 + num5; //In here we convert Number into String
 
 console.log(total3)
+
+// For Convert Number to a String(toString)
+
+var num7 = 100;
+num7 = num7.toString(); //In here we convert Number into String
+console.log(num7)
+
+// For Check if a Number is Integer
+
+var num8 = 10.5;
+console.log(Number.isInteger(num8)) //In here we check if a Number is Integer or Not
+
+// For Convert String to a Number(parseFloat)
+
+var num9 = "10.05";
+var num10 = 15;
+
+num9 = parseFloat(num9); //In here we convert String into Number for Float Number
+var total4 = num9 + num10;
+
+console.log(total4)
+
+
