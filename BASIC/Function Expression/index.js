@@ -35,3 +35,22 @@ var ExpressionFun = function(message, message1){
      console.log(message, message1);
 }
 ExpressionFun("hello", "My Name is Naimul Hasan Nabil");
+
+// Function Expression with Rest Parameter
+
+var myFunction5 = (...numbers) => {
+    return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+console.log(myFunction5(1, 2, 3, 4, 5)); // Output: 15
+
+// Function Expression with Destructuring Assignment
+
+var person = {
+    name: "Naimul Hasan Nabil",
+    age: 30
+};
+
+var {name} = person;
+
+console.log(name); // Output: John Doe
