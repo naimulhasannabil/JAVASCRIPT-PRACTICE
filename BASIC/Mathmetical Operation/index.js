@@ -71,3 +71,17 @@ console.log(sum)
 
 var ran = Math.random(); // random method returns a random number between 0 and 1. you can also add the number that you are randomly wanted.
 console.log(ran)
+
+//For Convert String to Number
+
+var num6 = "85";
+num6 = parseInt(num6); //In here we convert String into Number for Int Number
+var total2 = num3 + num6;
+
+console.log(total2)
+
+//For Convert Number to String
+
+var num7 = 100;
+num7 = num7.toString(); //In here we convert Number into String
+console.log(num7)
