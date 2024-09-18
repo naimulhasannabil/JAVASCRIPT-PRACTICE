@@ -1,0 +1,21 @@
+// Basic Modern JavaScript
+
+
+// ES6 Modules
+
+import { myFunction } from './myFunction.js';
+
+console.log(myFunction(5, 6)); // Output: 30
+
+// ES6 Template Literals
+
+const name = 'John Doe';
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // Output: Hello, John Doe!
+
+// ES6 Destructuring
+
+const person = { name: 'John Doe', age: 30 };
+const { name: newName, age: newAge } = person;
+console.log(newName); // Output: John Doe
+console.log(newAge); // Output: 30
