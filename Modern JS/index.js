@@ -19,3 +19,25 @@ const person = { name: 'John Doe', age: 30 };
 const { name: newName, age: newAge } = person;
 console.log(newName); // Output: John Doe
 console.log(newAge); // Output: 30
+
+// Create a new person object
+
+const newPerson = { ...person, city: 'New York' };
+console.log(newPerson.city); // Output: New York
+
+// ES6 Classes
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hello, my name is ${this.name}!`);
+    }
+}
+
+const john = new Person('John Doe', 30);
+
+john.greet(); // Output: Hello, my name is John Doe!
