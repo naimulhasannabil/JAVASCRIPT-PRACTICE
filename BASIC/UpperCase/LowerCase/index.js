@@ -20,3 +20,22 @@ var ConcatType2 = "World";
 console.log(ConcatType1.concat(' ', ConcatType2))
 
 
+// // For Length
+
+var StringType = "Hello World";
+console.log(StringType.length)
+
+// // For Trim
+
+var TrimType = "   Hello World   ";
+console.log(TrimType.trim())
+
+// // For Search
+
+var SearchType = "Hello World";
+console.log(SearchType.search('World'))
+
+// // For Replace
+
+var ReplaceType = "Hello World";
+console.log(ReplaceType.replace('World', 'JavaScript'))
