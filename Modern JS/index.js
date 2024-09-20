@@ -59,3 +59,11 @@ myPromise.then((value) => {
     console.log(value); // Output: 5
 });
 
+// Async/Await
+
+async function myAsyncFunction() {
+    const value = await myPromise;
+    console.log(value); // Output: 5
+}
+
+myAsyncFunction();
