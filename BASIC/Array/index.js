@@ -83,3 +83,31 @@ console.log("Searching an element in an array");
 console.log(fdName.indexOf('c')); //search for 'c' in the array and return its index
 
 console.log(fdName.lastIndexOf('c')); //search for 'c' in the array from the end and return its index
+
+//Advanced
+
+console.log("After using map method");
+
+var numbers = [1, 2, 3, 4, 5];
+
+var doubledNumbers = numbers.map(function(number){return number * 2}); //double each number in the array
+
+console.log(doubledNumbers);
+
+console.log("After using filter method");
+
+var filteredNumbers = numbers.filter(function(number){return number % 2 === 0}); //filter even numbers in the array
+
+console.log(filteredNumbers);
+
+console.log("After using reduce method");
+
+var sum = numbers.reduce(function(accumulator, currentValue){return accumulator + currentValue}, 0); //calculate the sum of all numbers in the array
+
+console.log(sum);
+
+console.log("After using every method");
+
+var allEven = numbers.every(function(number){return number % 2 === 0}); //check if all numbers in the array are even
+
+console.log(allEven);
