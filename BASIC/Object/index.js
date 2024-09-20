@@ -174,3 +174,4 @@ var employee1 = new Employee("Jane Smith", 28, "Los Angeles", "Manager");
 // console.log(employee1.name); // Output: Jane Smith
 
 employee1.ShowMe(); // Output: Name: Jane Smith, Age: 28, City: Los Angeles, Position: Manager
+
