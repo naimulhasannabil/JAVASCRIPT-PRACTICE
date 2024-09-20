@@ -25,3 +25,25 @@ console.log(diff); // Output: 5
 var product = num3 * num4;
 
 console.log(product); // Output: 50
+
+var quotient = num3 / num4;
+
+console.log(quotient); // Output: 2
+
+var remainder = num3 % num4;
+
+console.log(remainder); // Output: 0
+
+// Increment and Decrement Operations
+
+var num5 = 5;
+
+num5++;
+
+console.log(num5); // Output: 6
+
+var num6 = 5;
+
+num6--;
+
+console.log(num6); // Output: 4
