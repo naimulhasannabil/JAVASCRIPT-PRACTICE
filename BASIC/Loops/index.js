@@ -113,3 +113,20 @@ function greet(name) {
 }
 
 greet("Nabil");
+
+// Function with Parameter
+
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 6));
+
+// Function with Default Parameter
+
+function add(a = 5, b = 6) {
+    return a + b;
+}
+
+console.log(add());
+
