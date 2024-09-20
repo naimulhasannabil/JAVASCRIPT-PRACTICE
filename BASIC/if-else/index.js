@@ -148,3 +148,17 @@ var width = 3; // in meters
 var area = length * width;
 console.log("Area of the rectangle: " + area + " square meters");
 
+
+// Write a program that calculates the area of a circle. The formula for the area of a circle is: π * radius^2.
+
+var radius = 5; // in meters
+var area = Math.PI * Math.pow(radius, 2);
+console.log("Area of the circle: " + area.toFixed(2)); //.toFixed(2) limit the number of decimals to 2
+
+// Write a program that calculates the volume of a sphere. The formula for the volume of a sphere is: (4/3) * π * radius^3.
+
+var radius = 5; // in meters
+var volume = (4/3) * Math.PI * Math.pow(radius, 3);
+console.log("Volume of the sphere: " + volume.toFixed(2)); //.toFixed(2) limit the number of decimals to 2
+
+
