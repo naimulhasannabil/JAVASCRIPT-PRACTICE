@@ -41,3 +41,21 @@ class Person {
 const john = new Person('John Doe', 30);
 
 john.greet(); // Output: Hello, my name is John Doe!
+
+// Arrow Functions
+
+const myFunction = (p1, p2) => p1 * p2;
+console.log(myFunction(5, 6)); // Output: 30
+
+// Promises
+
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve(5);
+    }, 2000);
+});
+
+myPromise.then((value) => {
+    console.log(value); // Output: 5
+});
+
