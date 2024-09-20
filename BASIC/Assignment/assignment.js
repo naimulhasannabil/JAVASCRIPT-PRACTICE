@@ -79,3 +79,25 @@ console.log(num7)
  // Answer:
 var num8 = 10.5;
 console.log(Number.isInteger(num8)) //In here we check if a Number is Integer or Not
+
+// 16. How to Convert String to a Number(parseFloat)?
+ // Answer:
+var num9 = "10.05";
+var num10 = 15;
+
+num9 = parseFloat(num9); //In here we convert String into Number for Float Number
+var total4 = num9 + num10;
+
+// 17. How to Check if a Number is Prime?
+ // Answer:
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+var num11 = 17;
+
+console.log(isPrime(num11)) //Output: true
