@@ -47,3 +47,16 @@ var num6 = 5;
 num6--;
 
 console.log(num6); // Output: 4
+
+// object
+var person = {
+    name : "Naimul Hasan Nabi",
+    age :  23,
+    city : "Dhaka"
+}
+
+console.log(person.name); // Output: Naimul Hasan Nabi
+
+person.age = 24;
+
+console.log(person.age); // Output: 24
