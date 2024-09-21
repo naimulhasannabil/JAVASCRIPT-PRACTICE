@@ -70,3 +70,11 @@ console.log(names[0]); // Output: Nabil
 names[1] = "Naimul";
 
 console.log(names[1]); // Output: Naimul
+
+// Function
+
+function greet() {
+    console.log("Hello World!");
+}
+
+greet(); // Output: Hello World!
