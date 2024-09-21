@@ -78,3 +78,17 @@ function greet() {
 }
 
 greet(); // Output: Hello World!
+
+// Function with Parameter
+
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(5, 6)); // Output: 11
+
+function sub(a, b) {
+    return a - b;
+}
+
+console.log(sub(10, 5)); // Output: 5
