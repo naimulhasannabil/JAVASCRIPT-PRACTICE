@@ -60,3 +60,13 @@ console.log(person.name); // Output: Naimul Hasan Nabi
 person.age = 24;
 
 console.log(person.age); // Output: 24
+
+// Array
+
+var names = ["Nabil", "Nurul", "Mahmudul"];
+
+console.log(names[0]); // Output: Nabil
+
+names[1] = "Naimul";
+
+console.log(names[1]); // Output: Naimul
