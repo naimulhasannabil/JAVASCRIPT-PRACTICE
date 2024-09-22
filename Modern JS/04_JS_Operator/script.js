@@ -74,7 +74,7 @@ console.log(p <= q);  // Less Than Equal to
 */
 
 // && AND Operator
-// || NOT operator
+// || OR operator
 // ! NOT operator
 
 /*
@@ -85,7 +85,7 @@ let j = 10;
 let k = 20;
 
 j = j + k;   // Reassign j 
-j += k;
+j += k;      // same as above
 
 j = j - k;
 j -= k; 
