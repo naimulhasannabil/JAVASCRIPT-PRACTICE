@@ -25,10 +25,11 @@ let someInfo;           // Undefined
 let someThing = null;   // Null
 
 
-let fruits = ['Apple', 'Orange', 'Lemon', 'Peer'];               // Object
+let fruits = ['Apple', 'Orange', 'Lemon', 'Peer'];               //string Object
 fruits[1] = 'Mango';   // replacing 'Mango' with 'orange'
 
-let studentInfo = {
+// Object
+let studentInfo = {            
     fullName : 'Naimul Hasan Nabil',
     age : 23,
     dateOfBirth :2003
