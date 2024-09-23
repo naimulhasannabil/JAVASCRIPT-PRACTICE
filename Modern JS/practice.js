@@ -95,3 +95,9 @@ console.log(sub(10, 5)); // Output: 5
 
 let numS = `5 * "2"`;
 console.log(numS);
+
+
+function bigLetter (a) {
+    console.log(a.toUpperCase());
+}
+bigLetter('the quick brown fox');

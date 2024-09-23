@@ -56,3 +56,12 @@ function someThing(firstName) {
    return sayHello();
 }
 someThing('Naimul Hasan Nabil');
+
+function newF(fullName){
+    function sayHello2(){
+        alert('hello! ' + fullName);
+    }
+    return sayHello2();
+}
+
+newF('Hey! What\'s up?');
