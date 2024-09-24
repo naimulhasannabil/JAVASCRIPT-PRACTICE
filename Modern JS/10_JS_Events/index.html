@@ -7,11 +7,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onscroll="onScroll()">
     <h1 id="title">JavaScript is Fun</h1>
-    <button onclick="subscribe()" id="btn">Subscribe</button>
+    <button  id="btn">Subscribe</button>
     <h2 id="text"></h2>
-    <button id="like" onclick="like()"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+    <!-- <button id="like" onclick="like()"><i class="fa-regular fa-thumbs-up"></i> Like</button> -->
+
+    <!-- keyboard event -->
+     <form action="" id="form" onkeyup="keyPress()">
+         <label for="">Name</label>
+         <input type="text" placeholder="Enter your Name">
+         <label for="">Email</label>
+         <input type="email" placeholder="Enter your email">
+         <label for="">Massage</label>
+         <textarea id="textarea" placeholder="Enter Your Message"></textarea>
+         <input type="submit" value="Send Message">
+     </form>
+
+     <ul id="ul">
+        <li id="li">Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+     </ul>
+   
+
+     <!-- <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt corrupti dolore repellat quasi esse laborum optio veniam obcaecati accusantium, cupiditate asperiores. Officia, possimus nulla molestiae debitis excepturi temporibus, nesciunt laborum nemo praesentium ea voluptate, minima cupiditate esse dignissimos blanditiis autem asperiores officiis doloribus iste labore consequuntur quidem error. Quae error, laboriosam debitis sit dolore ratione magni atque velit nostrum provident doloribus enim neque harum. Fugit numquam ex sed exercitationem asperiores itaque ab distinctio iure quas blanditiis, doloribus laborum maxime dolorum voluptas ad! Tempore voluptate maxime accusamus perferendis illo rem cum aliquam unde, aliquid, in sed? Ex atque harum quis.</p>
+     </div> -->
     
     <script src="script.js"></script>
   </body>
