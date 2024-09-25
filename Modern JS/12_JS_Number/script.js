@@ -35,5 +35,12 @@ const d = 'JavaScript';
 // document.getElementById('title').innerHTML = value;
 
 // Number Convert
+// console.log(c.toString(2));
 
-console.log(c.toString(2));
+
+// const n = 300;
+// const r = new Number(300);
+
+// console.log(n == r);
+// console.log(n === r);
+
