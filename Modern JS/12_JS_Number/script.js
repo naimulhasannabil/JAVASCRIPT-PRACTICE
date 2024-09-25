@@ -38,9 +38,14 @@ const d = 'JavaScript';
 // console.log(c.toString(2));
 
 
-// const n = 300;
-// const r = new Number(300);
+const n = 300;
+const r = new Number(300);
+const w = 6233.541212;
 
 // console.log(n == r);
 // console.log(n === r);
 
+// Number Method  toPrecision
+console.log(w.toPrecision(3));    // Always try to avoid this.
+ console.log(w.toFixed(2));
+ 
