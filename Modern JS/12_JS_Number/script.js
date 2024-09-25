@@ -46,6 +46,14 @@ const w = 6233.541212;
 // console.log(n === r);
 
 // Number Method  toPrecision
-console.log(w.toPrecision(3));    // Always try to avoid this.
- console.log(w.toFixed(2));
- 
+// console.log(w.toPrecision(3));    // Always try to avoid this.
+//  console.log(w.toFixed(2));
+
+let newNum = Number.EPSILON;
+newNum = Number.MAX_VALUE;
+newNum = Number.MIN_VALUE;
+newNum = Number.POSITIVE_INFINITY;
+newNum = Number.NEGATIVE_INFINITY;
+newNum = Number.NaN;
+
+console.log(newNum);
