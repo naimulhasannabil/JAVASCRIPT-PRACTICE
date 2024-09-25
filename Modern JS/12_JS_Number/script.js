@@ -22,14 +22,18 @@ const c = 30;
 // When we calculate a exception in the code.
 const d = 'JavaScript';
 
-console.log(c - d);     // output is NaN(Not a number)
+// console.log(c - d);     // output is NaN(Not a number)
 
 // infinity 
-let num = 3;
-let value ='';
+// let num = 3;
+// let value ='';
 
-while(num != Infinity) {
-    num = num * num;
-    value = value + num + '<br>';
-}
-document.getElementById('title').innerHTML = value;
+// while(num != Infinity) {
+//     num = num * num;
+//     value = value + num + '<br>';
+// }
+// document.getElementById('title').innerHTML = value;
+
+// Number Convert
+
+console.log(c.toString(2));
