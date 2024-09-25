@@ -14,4 +14,17 @@ const myDate = new Date();
 // );
 
 let updateDate = new Date('09-25-2024');
-console.log(updateDate);
+// console.log(updateDate);
+
+
+let myTime = Date.now();
+// Simple Check how many milliseconds our code will execute .
+function simpleTask() {
+    for(let step = 0; step < 10; step++) {
+        console.log('Walking East to one step');
+    }
+}
+let startTime = Date.now();
+simpleTask();
+let endTime = Date.now();
+console.log(`The Task Took ${endTime - startTime} millisecond to complete`);
