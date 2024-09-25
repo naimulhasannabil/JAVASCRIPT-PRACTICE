@@ -23,3 +23,13 @@ const c = 30;
 const d = 'JavaScript';
 
 console.log(c - d);     // output is NaN(Not a number)
+
+// infinity 
+let num = 3;
+let value ='';
+
+while(num != Infinity) {
+    num = num * num;
+    value = value + num + '<br>';
+}
+document.getElementById('title').innerHTML = value;
