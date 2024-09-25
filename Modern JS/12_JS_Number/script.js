@@ -16,3 +16,10 @@ const c = 30;
 // console.log(m + a + b + c);
 
 // it will be different when we calculate multiplication, division and subtract 
+
+
+
+// When we calculate a exception in the code.
+const d = 'JavaScript';
+
+console.log(c - d);     // output is NaN(Not a number)
