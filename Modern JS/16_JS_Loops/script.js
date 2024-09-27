@@ -27,3 +27,9 @@ car.forEach(function (i) {
   console.log(i);
 });
 
+// For of Loop
+
+for (let i of car) {
+  console.log(i);
+}
+
