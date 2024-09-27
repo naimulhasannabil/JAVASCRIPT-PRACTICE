@@ -33,3 +33,10 @@ for (let i of car) {
   console.log(i);
 }
 
+// While Loop
+
+let num = 0;
+while (num < 10) {
+  console.log(num);
+  num++;
+}
