@@ -18,6 +18,11 @@ function firstName() {
   let cycle = "Duronto";
   console.log(cycle);
   console.log(car);
+
+  //Automatically Global Variable
+   person = 'Naimul Hasan Nabil';  // Try to Avoid this 
+   console.log(person);
+
   function lastName() {
     let fruits = "Mango";
     console.log(fruits);
@@ -26,3 +31,4 @@ function firstName() {
   lastName();
 }
 firstName();
+console.log(person);
