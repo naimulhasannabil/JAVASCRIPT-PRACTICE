@@ -10,3 +10,10 @@ function name(p1, p2) {
     let y = 5;
     console.log(p1, p2);
 }
+
+// This Function will show me a error when i use strict .
+// fullName(4, 5);       
+// function fullName(p1, p1) {
+//     let y = 5;
+//     console.log(p1, p1);
+// }
