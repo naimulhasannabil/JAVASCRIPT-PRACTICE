@@ -23,3 +23,18 @@ var z;            // Declare After Usage
 // game = 'Football';
 // console.log(game);      // it will show a output here
 // let game;       // here we see a error because let & Const dose not support Hoisting 
+
+
+// Function hoisting
+
+ function car() {
+    console.log('I Love Lamborghini');
+ }
+ car();
+
+ // Now Let's See Function Hoisting
+ car2('R15');
+ function car2(bike) {
+    console.log(`I Love ${bike}`);
+ }
+ 
