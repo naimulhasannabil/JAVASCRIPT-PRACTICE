@@ -17,3 +17,9 @@ console.log(y);
 z = 30;            // Initialized Before Declare
 console.log(z);    // You will See there is no Error in the Console
 var z;            // Declare After Usage
+
+// One more things to remember Hoisting is work for var only
+
+// game = 'Football';
+// console.log(game);      // it will show a output here
+// let game;       // here we see a error because let & Const dose not support Hoisting 
