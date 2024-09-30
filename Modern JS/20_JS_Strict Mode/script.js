@@ -17,3 +17,9 @@ function name(p1, p2) {
 //     let y = 5;
 //     console.log(p1, p1);
 // }
+
+// Now let's see some in future reserved keyword
+
+// let package = 'Some Text";
+// let public = 'Some Text";
+// let private = 'Some Text";
