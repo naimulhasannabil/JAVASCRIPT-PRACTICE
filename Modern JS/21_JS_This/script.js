@@ -17,5 +17,5 @@ myFunc(); // You see that function and arrow function Both refer to Window
 
 const myBtn = document.querySelector('button');
 myBtn.addEventListener('click', function () {
-    
+    console.log(this);   // Show html Button in the Console
 })
