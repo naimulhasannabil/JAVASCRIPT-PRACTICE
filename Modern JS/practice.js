@@ -101,3 +101,9 @@ function bigLetter (a) {
     console.log(a.toUpperCase());
 }
 bigLetter('the quick brown fox');
+
+// Hoisting
+
+// x = 10;
+// console.log(x);
+// let x;    // Hoisting
