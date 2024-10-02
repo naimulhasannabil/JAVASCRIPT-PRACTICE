@@ -58,7 +58,17 @@ const myCountry = {
 // }
 
 // we also got output for-in loops for array.
-for (const key in fruits) {
-    console.log(fruits[key]);
-}
+// for (const key in fruits) {
+//     console.log(fruits[key]);
+// }
 
+// For-each
+
+// fruits.forEach(function (fruit) {
+//    console.log(fruit);
+// });
+
+// Arrow Function
+// fruits.forEach( (fruit) => {
+//     console.log(fruit);
+//  });
