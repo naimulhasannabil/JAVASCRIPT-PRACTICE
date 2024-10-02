@@ -87,9 +87,11 @@ const myTotal = numbers.reduce((acc, curV) => acc + curV, 0);
 // console.log(myTotal);
 // for understanding part by part
 const myTotal2 = numbers.reduce((acc, curV) => {
-  console.log(`Accumulator ${acc} and Current Value ${curV}`);
+  //   console.log(`Accumulator ${acc} and Current Value ${curV}`);
   return acc + curV;
 }, 0);
 // console.log(myTotal2);
 
-
+// For Practice Card
+const coursePrice = stack.reduce((acc, course) => acc + course.price, 0);
+console.log(coursePrice);
