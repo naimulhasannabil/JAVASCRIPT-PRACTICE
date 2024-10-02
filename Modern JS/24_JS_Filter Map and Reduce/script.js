@@ -81,3 +81,15 @@ const myNum = numbers
   .map((num) => num * 5)
   .filter((num) => num >= 50);
 // console.log(myNum);
+
+// Reduce
+const myTotal = numbers.reduce((acc, curV) => acc + curV, 0);
+// console.log(myTotal);
+// for understanding part by part
+const myTotal2 = numbers.reduce((acc, curV) => {
+  console.log(`Accumulator ${acc} and Current Value ${curV}`);
+  return acc + curV;
+}, 0);
+// console.log(myTotal2);
+
+
