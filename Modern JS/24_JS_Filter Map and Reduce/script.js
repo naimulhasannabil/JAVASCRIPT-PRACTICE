@@ -93,5 +93,5 @@ const myTotal2 = numbers.reduce((acc, curV) => {
 // console.log(myTotal2);
 
 // For Practice Card
-const coursePrice = stack.reduce((acc, course) => acc + course.price, 0);
-console.log(coursePrice);
+// const coursePrice = stack.reduce((acc, course) => acc + course.price, 0);
+// console.log(coursePrice);
