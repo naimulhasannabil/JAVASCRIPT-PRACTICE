@@ -48,6 +48,11 @@ const myCountry = {
 //}
 
 // For-IN loops easily works for object.
-for (const key in myCountry) {
-  console.log(key, ":", myCountry[key]);
-}
+// for (const key in myCountry) {
+//   console.log(key, ":", myCountry[key]);
+// }
+
+// If we want use for-of loop and seeing a output without a error it was possible to do. Let's see
+// for (const key of Object.keys(myCountry)) {
+// console.log(key, ":", myCountry[key]);
+// }
