@@ -37,45 +37,47 @@ numbers.forEach((num) => {
 });
 // console.log(forNums);
 
-
 const stack = [
-    {
-      name: 'MERN Stack',
-      property: 'Mongo, Express, React, Node',
-      foundation: 'JavaScript',
-      tranding: true,
-      price: 5000,
-    },
-    {
-      name: 'MEAN Stack',
-      property: 'Mongo, Express, Angular, Node',
-      foundation: 'JavaScript',
-      tranding: false,
-      price: 3000,
-    },
-    {
-      name: 'Laravel',
-      property: 'JavaScript, Vue, PHP, Laravel, MySQL',
-      foundation: 'PHP',
-      tranding: true,
-      price: 4000,
-    },
-    {
-      name: 'WordPress',
-      property: 'JavaScript, PHP, WordPress, MySQL',
-      foundation: 'PHP',
-      tranding: false,
-      price: 3500,
-    },
-  ];
+  {
+    name: "MERN Stack",
+    property: "Mongo, Express, React, Node",
+    foundation: "JavaScript",
+    tranding: true,
+    price: 5000,
+  },
+  {
+    name: "MEAN Stack",
+    property: "Mongo, Express, Angular, Node",
+    foundation: "JavaScript",
+    tranding: false,
+    price: 3000,
+  },
+  {
+    name: "Laravel",
+    property: "JavaScript, Vue, PHP, Laravel, MySQL",
+    foundation: "PHP",
+    tranding: true,
+    price: 4000,
+  },
+  {
+    name: "WordPress",
+    property: "JavaScript, PHP, WordPress, MySQL",
+    foundation: "PHP",
+    tranding: false,
+    price: 3500,
+  },
+];
 
-  let userStack = stack.filter(sk => sk.foundation === 'PHP');
+let userStack = stack.filter((sk) => sk.foundation === "PHP");
 //   console.log(userStack);
 
 // When we need add +5 using Map
 // const myNum = numbers.map(num => num + 5);
 // console.log(myNum);
 
-// chaining 
-const myNum = numbers.map(num => num + 5).map(num => num * 5);
-console.log(myNum);
+// chaining
+const myNum = numbers
+  .map((num) => num + 5)
+  .map((num) => num * 5)
+  .filter((num) => num >= 50);
+// console.log(myNum);
