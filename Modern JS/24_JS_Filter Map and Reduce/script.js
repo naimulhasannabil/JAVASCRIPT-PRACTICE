@@ -27,3 +27,12 @@ const res6 = numbers.filter((num) => {
   return num > 2;
 });
 console.log(res6);
+
+// filtering using for-each
+const forNums = [];
+numbers.forEach((num) => {
+  if (num > 5) {
+    forNums.push(num);
+  }
+});
+console.log(forNums);
