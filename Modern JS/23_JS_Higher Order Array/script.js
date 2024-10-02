@@ -26,6 +26,11 @@ const country = new Map([
 // Add New items
 country.set("Bhu", "Bhutan");
 // country.set('Bn', 'Bangladesh');   // Don't Add same type Data.
-for (const key of country) {
-  console.log(key);
+// for (const key of country) {
+//   console.log(key);
+// }
+
+// Output like as we want
+for (const [key, value] of country) {
+    console.log(key, ':', value);
 }
