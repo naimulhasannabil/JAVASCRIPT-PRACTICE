@@ -85,3 +85,22 @@ const myCountry = {
 //     console.log(fruit, index, arr);
 //  });
 
+// Multiple Object
+
+const stack = [
+  {
+    name: "MERN Stack",
+    property: "Mongo, Express, React, Node",
+  },
+  {
+    name: "Laravel",
+    property: "JavaScript, vue, PHP, Laravel, Mysql",
+  },
+  {
+    name: "WordPress",
+    property: "JavaScript, PHP, WordPress, Mysql",
+  },
+];
+stack.forEach((info) => {
+  console.log(`Want to learn ${info.name}? Learn this ${info.property}`);
+});
