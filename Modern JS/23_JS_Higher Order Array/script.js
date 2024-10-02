@@ -32,5 +32,22 @@ country.set("Bhu", "Bhutan");
 
 // Output like as we want
 for (const [key, value] of country) {
-    console.log(key, ':', value);
+  // console.log(key, ':', value);
+}
+
+// Check for Object
+const myCountry = {
+  Bn: "Bangladesh",
+  In: "India",
+  Pk: "Pakistan",
+  Np: "Nepal",
+};
+
+//for (const key of myCountry) {
+// console.log(key);    // it will show error like TypeError.
+//}
+
+// For-IN loops easily works for object.
+for (const key in myCountry) {
+  console.log(key, ":", myCountry[key]);
 }
