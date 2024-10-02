@@ -9,3 +9,9 @@ for(let f = 0; f < fruits.length; f++){
 for (const f of fruits) {
     console.log(f);     // It is easier than For loop.
 }
+
+// Break The characters.
+const myName = 'Naimul Hasan Nabil';
+for (const name of myName) {
+    console.log(`Each char is ${name}`);
+}
