@@ -72,3 +72,16 @@ const myCountry = {
 // fruits.forEach( (fruit) => {
 //     console.log(fruit);
 //  });
+
+//Lets use for-each outside of the function
+// function myFruit(fruit) {
+//   console.log(fruit);
+// }
+// fruits.forEach(myFruit);
+
+// When you need to see the full data of for-each loop
+
+// fruits.forEach( (fruit, index, arr) => {
+//     console.log(fruit, index, arr);
+//  });
+
