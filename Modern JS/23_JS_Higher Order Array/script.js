@@ -56,3 +56,9 @@ const myCountry = {
 // for (const key of Object.keys(myCountry)) {
 // console.log(key, ":", myCountry[key]);
 // }
+
+// we also got output for-in loops for array.
+for (const key in fruits) {
+    console.log(fruits[key]);
+}
+
