@@ -70,4 +70,12 @@ const stack = [
   ];
 
   let userStack = stack.filter(sk => sk.foundation === 'PHP');
-  console.log(userStack);
+//   console.log(userStack);
+
+// When we need add +5 using Map
+// const myNum = numbers.map(num => num + 5);
+// console.log(myNum);
+
+// chaining 
+const myNum = numbers.map(num => num + 5).map(num => num * 5);
+console.log(myNum);
