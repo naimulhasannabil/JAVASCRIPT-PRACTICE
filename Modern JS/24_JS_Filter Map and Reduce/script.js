@@ -20,13 +20,13 @@ const fruitsStartG = fruits.filter((fruit) =>
 
 const numbers = [1, 2, 3, 4, 5, 6];
 const res5 = numbers.filter((num) => num > 3);
-console.log(res5);
+// console.log(res5);
 
 // When you use curly braces in arrow function you must use return like this.
 const res6 = numbers.filter((num) => {
   return num > 2;
 });
-console.log(res6);
+// console.log(res6);
 
 // filtering using for-each
 const forNums = [];
@@ -35,4 +35,39 @@ numbers.forEach((num) => {
     forNums.push(num);
   }
 });
-console.log(forNums);
+// console.log(forNums);
+
+
+const stack = [
+    {
+      name: 'MERN Stack',
+      property: 'Mongo, Express, React, Node',
+      foundation: 'JavaScript',
+      tranding: true,
+      price: 5000,
+    },
+    {
+      name: 'MEAN Stack',
+      property: 'Mongo, Express, Angular, Node',
+      foundation: 'JavaScript',
+      tranding: false,
+      price: 3000,
+    },
+    {
+      name: 'Laravel',
+      property: 'JavaScript, Vue, PHP, Laravel, MySQL',
+      foundation: 'PHP',
+      tranding: true,
+      price: 4000,
+    },
+    {
+      name: 'WordPress',
+      property: 'JavaScript, PHP, WordPress, MySQL',
+      foundation: 'PHP',
+      tranding: false,
+      price: 3500,
+    },
+  ];
+
+  let userStack = stack.filter(sk => sk.foundation === 'PHP');
+  console.log(userStack);
