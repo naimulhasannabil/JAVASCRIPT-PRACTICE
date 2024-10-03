@@ -1,5 +1,6 @@
 // JavaScript Call and Apply Method
 
+// Practice On Bus Company
 const greenLine = {
   bus: "Green Line",
   bCode: "GL",
@@ -8,9 +9,21 @@ const greenLine = {
     console.log(
       `${name} booked a seat on ${this.bus} ticket ${this.bCode}-${seatNumber}`
     );
-    this.ticket.push({ticketInfo : `${this.bCode}-${seatNumber}, name`})
+    this.ticket.push({ ticketInfo: `${this.bCode}-${seatNumber}, name` });
   },
 };
-greenLine.book('C1', 'Naimul Hasan Nabil');
-greenLine.book('C2', 'Nurul Huda');
+greenLine.book("C1", "Naimul Hasan Nabil");
+greenLine.book("C2", "Nurul Huda");
 console.log(greenLine);
+
+// Add New Bus Company
+const shohag = {
+  bus: "Shohag",
+  bCode: "SH",
+  ticket: [],
+};
+const book = greenLine.book;
+book.call(shohag, "A1", "Mahmudul Haque Emon");
+book.call(shohag, "A2", "Zahin Afser");
+// book("A1", "Mahmudul Haque Emon");
+console.log(shohag);
