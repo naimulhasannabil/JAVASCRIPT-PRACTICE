@@ -54,3 +54,14 @@ ticketSH('Nurul');
 ticketSH('Zahin');
 ticketSH('Jubayer');
 ticketSH('Junayed');
+
+const person = {
+    firstName : 'Naimul Hasan',
+    lastName : 'Nabil',
+    display : function () {
+       return this.firstName + ' ' + this.lastName;
+    }
+}
+
+const display = person.display();
+console.log(display);
