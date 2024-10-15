@@ -68,13 +68,28 @@ book.apply(greenLine, ticketDate);
 
 // CallBack
 // In callback we cannot track this method so we must use bind method .
-const person = {
-  firstName: "Naimul Hasan",
-  lastName: "Nabil",
-  display: function () {
-    console.log(this.firstName + " " + this.lastName);
-  },
-};
+// const person = {
+//   firstName: "Naimul Hasan",
+//   lastName: "Nabil",
+//   display: function () {
+//     console.log(this.firstName + " " + this.lastName);
+//   },
+// };
 
-const display = person.display;
-console.log(setTimeout(display.bind(person), 2000));
+// const display = person.display;
+// console.log(setTimeout(display.bind(person), 2000));
+
+// When we press button it add 1 Bus
+
+greenLine.busses = 20;
+greenLine.buyBus = function () {
+//   console.log(this);
+  this.busses++;
+  console.log(this.busses);
+};
+// greenLine.buyBus();
+
+// document.querySelector('.btn').addEventListener('click', greenLine.buyBus);    // It won't Work
+document
+  .querySelector(".btn")
+  .addEventListener("click", greenLine.buyBus.bind(greenLine));
