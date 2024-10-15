@@ -21,6 +21,8 @@ const shohag = {
   bCode: "SH",
   ticket: [],
 };
+
+// When you don't need any details data in object then you use call method
 const book = greenLine.book;
 book.call(shohag, "A1", "Mahmudul Haque Emon");
 book.call(shohag, "A2", "Zahin Afser");
@@ -36,9 +38,19 @@ const hanif = {
 book.call(hanif, "B2", "Mursalin Parbez");
 
 // Apply Method
+// when you see array data you use apply method
 const ticketDate = ["B2", "Mursalin Parbez"];
 book.apply(greenLine, ticketDate);
 
 //Bind Method
-const ticketSH = book.bind(shohag);
-ticketSH("E1", "Emon");
+// If you take any method but you will work it later than you use bind method
+// const ticketSH = book.bind(shohag);
+// ticketSH("E1", "Emon");
+
+// Predefine
+const ticketSH = book.bind(shohag, 'E1');
+ticketSH("Emon");
+ticketSH('Nurul');
+ticketSH('Zahin');
+ticketSH('Jubayer');
+ticketSH('Junayed');
