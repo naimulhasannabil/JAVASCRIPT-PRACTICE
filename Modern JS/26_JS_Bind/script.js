@@ -83,7 +83,7 @@ book.apply(greenLine, ticketDate);
 
 greenLine.busses = 20;
 greenLine.buyBus = function () {
-//   console.log(this);
+  //   console.log(this);
   this.busses++;
   console.log(this.busses);
 };
@@ -93,3 +93,11 @@ greenLine.buyBus = function () {
 document
   .querySelector(".btn")
   .addEventListener("click", greenLine.buyBus.bind(greenLine));
+
+  // Partial Application
+const addTAX = (rate, value) => value + (value * rate) / 100;
+console.log(addTAX(10, 100));
+
+// Reuse addTAX
+const addVAT = addTAX.bind(null, 15);
+console.log(addVAT(100));
