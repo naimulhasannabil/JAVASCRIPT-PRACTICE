@@ -48,20 +48,33 @@ book.apply(greenLine, ticketDate);
 // ticketSH("E1", "Emon");
 
 // Predefine
-const ticketSH = book.bind(shohag, 'E1');
-ticketSH("Emon");
-ticketSH('Nurul');
-ticketSH('Zahin');
-ticketSH('Jubayer');
-ticketSH('Junayed');
+// const ticketSH = book.bind(shohag, 'E1');
+// ticketSH("Emon");
+// ticketSH('Nurul');
+// ticketSH('Zahin');
+// ticketSH('Jubayer');
+// ticketSH('Junayed');
 
+// const person = {
+//     firstName : 'Naimul Hasan',
+//     lastName : 'Nabil',
+//     display : function () {
+//        return this.firstName + ' ' + this.lastName;
+//     }
+// }
+
+// const display = person.display();
+// console.log(display);
+
+// CallBack
+// In callback we cannot track this method so we must use bind method .
 const person = {
-    firstName : 'Naimul Hasan',
-    lastName : 'Nabil',
-    display : function () {
-       return this.firstName + ' ' + this.lastName;
-    }
-}
+  firstName: "Naimul Hasan",
+  lastName: "Nabil",
+  display: function () {
+    console.log(this.firstName + " " + this.lastName);
+  },
+};
 
-const display = person.display();
-console.log(display);
+const display = person.display;
+console.log(setTimeout(display.bind(person), 2000));
