@@ -11,3 +11,10 @@ aFunction(7, 5);
 })(4, 4);
 
 ((a, b) => console.log(a * b))(3, 5);
+
+
+//DOM
+// const h3 = document.querySelector('.h3');
+// const h4 = document.querySelector('.h4');
+// h3.style.backgroundColor = 'red';
+// h4.style.backgroundColor = 'Green';
