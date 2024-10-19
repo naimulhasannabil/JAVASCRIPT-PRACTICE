@@ -1,5 +1,11 @@
 // JavaScript DOM
-document.querySelector("h1").innerText = "Subscribe";
+// document.querySelector("h1").innerText = "Subscribe";
+// document.querySelector('h1').innerText;
+// ('Welcome');
+// document.querySelector('h1').textContent;
+// ('Welcome Ali');
+// document.querySelector('h1').innerHTML;
+// ('Welcome <span style="display: none;">Ali</span>');
 
 const box = document.querySelector(".box");
 box.style.backgroundColor = "red";
