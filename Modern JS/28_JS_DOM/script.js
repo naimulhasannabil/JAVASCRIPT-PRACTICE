@@ -44,3 +44,6 @@ convertedClass.forEach(function (i) {
 // Check className and ID.
 // document.querySelector('.box').id;
 // document.querySelector('.box').className;
+
+//Attribute check
+// document.querySelector('.box').getAttribute('id');
