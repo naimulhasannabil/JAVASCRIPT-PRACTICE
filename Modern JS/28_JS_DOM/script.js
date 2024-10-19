@@ -40,3 +40,7 @@ convertedClass.forEach(function (i) {
   i.style.margin = "0 0 15px";
   i.style.padding = "10px 20px";
 });
+
+// Check className and ID.
+// document.querySelector('.box').id;
+// document.querySelector('.box').className;
