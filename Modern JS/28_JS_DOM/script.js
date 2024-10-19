@@ -47,3 +47,6 @@ convertedClass.forEach(function (i) {
 
 //Attribute check
 // document.querySelector('.box').getAttribute('id');
+// Attribute Set
+// More important thing is when we use setAttribute it overwrite the old class and it also solved by adding old class with new class.
+// document.querySelector('.box').setAttribute('class', 'tex_white box');
