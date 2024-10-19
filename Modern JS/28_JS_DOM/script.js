@@ -22,3 +22,15 @@ menuItem.forEach(function (i) {
   i.style.color = "red";
   i.style.fontSize = "25px";
 });
+
+const cusClass = document.getElementsByClassName("nav_link");
+// Convert nodeClass to Array.
+const convertedClass = Array.from(cusClass);
+// for (let i = 0; i < cusClass.length; i++) {
+//   console.log(cusClass[i]);
+// }
+convertedClass.forEach(function (i) {
+  i.style.backgroundColor = "#262626";
+  i.style.margin = "0 0 15px";
+  i.style.padding = "10px 20px";
+});
