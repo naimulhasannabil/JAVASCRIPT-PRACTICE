@@ -1,18 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .main-box {
-   display: flex;
-   gap: 10px;
-   flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .box {
-    width: 200px;
-    background: #b9d6f2;
-    border-radius: 10px;
-    text-align: center;
-    padding: 25px;
-    margin-bottom: 20px;
+  width: 200px;
+  background: #b9d6f2;
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.hero {
+  background: #2c3e50;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+button {
+  background: #e74c3c;
+  color: #fff;
+  padding: 15px 35px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px 0;
 }
