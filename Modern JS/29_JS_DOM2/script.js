@@ -18,7 +18,7 @@ headTitle.innerText = headTitle.innerText + " Naimul Hasan Nabil";     // Concat
 //     newNum++;
 // }
 
-// Add Element
+// Create Element
 let learnBtn = document.createElement('button');
 learnBtn.innerText = 'Learn More';
 
@@ -27,3 +27,13 @@ heroArea.append(learnBtn);   //Last
 // heroArea.prepend(learnBtn);  //Fast
 // heroArea.before(learnBtn);   // Out of hero area before
 // heroArea.after(learnBtn);     // Out of hero area after
+
+// Add Element
+function addFruits(nameFruits) {
+    const li = document.createElement('li');
+    li.innerHTML = `${nameFruits}`;
+
+    document.querySelector('ul').appendChild(li);
+}
+addFruits('jack-Fruits')
+addFruits('Orange');
