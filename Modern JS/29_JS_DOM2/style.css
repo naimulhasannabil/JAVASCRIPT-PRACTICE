@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-box {
+   display: flex;
+   gap: 10px;
+}
+.box {
+    width: 200px;
+    background: #b9d6f2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+}
