@@ -29,11 +29,21 @@ heroArea.append(learnBtn);   //Last
 // heroArea.after(learnBtn);     // Out of hero area after
 
 // Add Element
-function addFruits(nameFruits) {
+// function addFruits(nameFruits) {
+//     const li = document.createElement('li');
+//     li.innerHTML = `${nameFruits}`;
+
+//     document.querySelector('ul').appendChild(li);
+// }
+// addFruits('jack-Fruits')
+// addFruits('Orange');
+
+//optimized way
+function addFruitsOP(nameFruits) {
     const li = document.createElement('li');
-    li.innerHTML = `${nameFruits}`;
+    li.appendChild(document.createTextNode(nameFruits));
 
     document.querySelector('ul').appendChild(li);
 }
-addFruits('jack-Fruits')
-addFruits('Orange');
+addFruitsOP('jack-Fruits')
+addFruitsOP('Orange');
