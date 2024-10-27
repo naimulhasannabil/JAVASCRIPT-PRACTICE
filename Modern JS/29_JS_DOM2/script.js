@@ -61,4 +61,7 @@ editFruits.replaceWith(newFruits);
 
 // Edit with tag
 const editTag = document.querySelector('li:last-child');
-editTag.outerHTML = '<p>Lemon</p>';
+// editTag.outerHTML = '<p>Lemon</p>';
+
+// Remove
+editTag.remove();
