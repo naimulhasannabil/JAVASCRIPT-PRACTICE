@@ -47,3 +47,14 @@ function addFruitsOP(nameFruits) {
 }
 addFruitsOP('jack-Fruits')
 addFruitsOP('Orange');
+
+// Edit
+const editFruits = document.querySelector('li:first-child');
+// console.log(editFruits);
+// editFruits.innerText = 'Bluebarry';
+// another way
+editFruits.textContent  = 'Bluebarrys';
+// It also change with replace function
+const newFruits = document.createElement('li');
+newFruits.textContent = 'Strawberry';
+editFruits.replaceWith(newFruits);
