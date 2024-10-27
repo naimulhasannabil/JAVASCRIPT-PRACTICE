@@ -58,3 +58,7 @@ editFruits.textContent  = 'Bluebarrys';
 const newFruits = document.createElement('li');
 newFruits.textContent = 'Strawberry';
 editFruits.replaceWith(newFruits);
+
+// Edit with tag
+const editTag = document.querySelector('li:last-child');
+editTag.outerHTML = '<p>Lemon</p>';
