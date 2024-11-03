@@ -22,3 +22,15 @@
     box-shadow: 0 0 10px #ddd;
     cursor: pointer;
 }
+#menu li.red {
+    background: #ff7675;
+}
+#menu li.green {
+    background: #55efc4;
+}
+#menu li.blue {
+    background: #74b9ff;
+}
+#menu li.pink {
+    background: #fd79a8;
+}
