@@ -30,5 +30,8 @@ const button = document.querySelectorAll("li");
 
 // Better Option
 button.forEach(function (value) {
-   
+   value.addEventListener('click', function() {
+     let className = this.classList.value;
+     body.style.backgroundColor = className;
+   })
 })
