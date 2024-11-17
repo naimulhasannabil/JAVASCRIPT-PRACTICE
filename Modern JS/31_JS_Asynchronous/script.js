@@ -43,16 +43,36 @@
 // console.log("Nabil5");
 
 // Promises
-// let coffee = new Promise((res, rej) => {
-     // if the condition is true then it return resolved otherwise it return rejected.
-//     if(true){
-//         return res();   // Resolved
-//     } else{
-//         return rej();   // Rejected
-//     }
-// });
-// coffee.then(function () {
-//     console.log('Resolved');
-// }).catch(function () {
-//     console.log('Rejected');
-// });
+/*
+let coffee = new Promise((res, rej) => {
+     if the condition is true then it return resolved otherwise it return rejected.
+    if(true){
+        return res();   // Resolved
+    } else{
+        return rej();   // Rejected
+    }
+});
+coffee.then(function () {
+    console.log('Resolved');
+}).catch(function () {
+    console.log('Rejected');
+});
+*/
+// Another Promises Code
+/*
+let mathAns = new Promise((res, rej) => {
+  let n = Math.floor(Math.random() * 10);
+  if (n < 5) {
+    return res();
+  } else {
+    return rej();
+  }
+});
+mathAns
+  .then(function () {
+    console.log("Bellow");
+  })
+  .catch(function () {
+    console.log("Above");
+  });
+*/
