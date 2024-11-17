@@ -150,22 +150,20 @@ randomUser();
 // console.log(myFunction());
 
 // Let's see how this function works.
-function myFunction() {
-    return Promise.resolve('Hello Nabil');
-}
-console.log(myFunction());
-
-// async function randomUser() {
-//   fetch(`https://randomuser.me/api/`)
-//     .then(function (raw) {
-//       return raw.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//     })
-//     .catch(function () {
-//         // Customized error showing.
-//       console.error("No data Found");
-//     });
+// function myFunction() {
+//     return Promise.resolve('Hello Nabil');
 // }
-// randomUser();
+// console.log(myFunction());
+
+// Using Async/Await
+/*
+async function randomUser() {
+  let urlAPI = await fetch(`https://randomuser.me/api/`);
+  let rawData = await urlAPI.json();
+  console.log(rawData);
+  console.log(`${rawData.results[0].name.title} ${rawData.results[0].name.first} ${rawData.results[0].name.last}` );
+  console.log(`${rawData.results[0].gender}`);
+  console.log(`${rawData.results[0].location.country}`);
+}
+randomUser();
+*/
