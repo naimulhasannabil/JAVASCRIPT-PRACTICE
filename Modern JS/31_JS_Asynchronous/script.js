@@ -76,3 +76,32 @@ mathAns
     console.log("Above");
   });
 */
+
+/*
+const step1 = new Promise((res, rej) => {
+  setTimeout(() => {
+    res("Step one done");
+  }, 2000);
+});
+
+const step2 = new Promise((res, rej) => {
+  setTimeout(() => {
+    res("Step two done");
+  }, 3000);
+});
+*/
+
+// for output
+/*
+step1.then(function (res) {
+  console.log(res);
+});
+step2.then(function (res) {
+  console.log(res);
+});
+*/
+
+// for array
+// Promise.all([step1, step2]).then(res => console.log(res));
+// if we add race function then it will show us who was the lower timeout function in the output.
+// Promise.race([step1, step2]).then(res => console.log(res));
