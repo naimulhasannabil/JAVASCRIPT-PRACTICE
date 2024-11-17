@@ -126,6 +126,7 @@ promise2.then(function (data) {
 
 //Fetch
 // when we use fetch it worked on micro task queue.
+/*
 function randomUser() {
   fetch(`https://randomuser.me/api/`)
     .then(function (raw) {
@@ -140,3 +141,31 @@ function randomUser() {
     });
 }
 randomUser();
+*/
+
+// This async function push data like promise.
+// async function myFunction() {
+//     return 'Hello Nabil';
+// }
+// console.log(myFunction());
+
+// Let's see how this function works.
+function myFunction() {
+    return Promise.resolve('Hello Nabil');
+}
+console.log(myFunction());
+
+// async function randomUser() {
+//   fetch(`https://randomuser.me/api/`)
+//     .then(function (raw) {
+//       return raw.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//     })
+//     .catch(function () {
+//         // Customized error showing.
+//       console.error("No data Found");
+//     });
+// }
+// randomUser();
