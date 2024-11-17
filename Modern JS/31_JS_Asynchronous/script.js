@@ -105,3 +105,19 @@ step2.then(function (res) {
 // Promise.all([step1, step2]).then(res => console.log(res));
 // if we add race function then it will show us who was the lower timeout function in the output.
 // Promise.race([step1, step2]).then(res => console.log(res));
+
+// Promises Chaining
+
+let promise1 = new Promise((res, rej) => {
+  return res("Step One Done");
+});
+
+let promise2 = promise1.then(function (data) {
+  console.log(data);
+  return new Promise(function (res, ret) {
+    return res("Step Two Done");
+  });
+});
+promise2.then(function (data) {
+  console.log(data);
+});
