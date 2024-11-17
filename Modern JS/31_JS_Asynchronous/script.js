@@ -108,6 +108,7 @@ step2.then(function (res) {
 
 // Promises Chaining
 
+/*
 let promise1 = new Promise((res, rej) => {
   return res("Step One Done");
 });
@@ -121,3 +122,21 @@ let promise2 = promise1.then(function (data) {
 promise2.then(function (data) {
   console.log(data);
 });
+*/
+
+//Fetch
+// when we use fetch it worked on micro task queue.
+function randomUser() {
+  fetch(`https://randomuser.me/api/`)
+    .then(function (raw) {
+      return raw.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    })
+    .catch(function () {
+        // Customized error showing.
+      console.error("No data Found");
+    });
+}
+randomUser();
