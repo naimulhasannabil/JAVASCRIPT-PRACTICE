@@ -34,10 +34,25 @@
  */
 
 // setTimeout(callback, timeinms)
-console.log("Nabil");
-console.log("Nabil2");
-setTimeout(function () {
-  console.log("Nabil3");
-}, 5000);
-console.log("Nabil4");
-console.log("Nabil5");
+// console.log("Nabil");
+// console.log("Nabil2");
+// setTimeout(function () {
+//   console.log("Nabil3");
+// }, 5000);
+// console.log("Nabil4");
+// console.log("Nabil5");
+
+// Promises
+// let coffee = new Promise((res, rej) => {
+     // if the condition is true then it return resolved otherwise it return rejected.
+//     if(true){
+//         return res();   // Resolved
+//     } else{
+//         return rej();   // Rejected
+//     }
+// });
+// coffee.then(function () {
+//     console.log('Resolved');
+// }).catch(function () {
+//     console.log('Rejected');
+// });
